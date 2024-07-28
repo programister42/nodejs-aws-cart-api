@@ -1,11 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 
-import { Stack } from './Stack';
+import { NodejsAwsCartApi } from './stack';
 
 const app = new cdk.App({});
 
-new Stack(app, 'nodejs-aws-cart-api', {
-  env: {
-    region: 'eu-central-1',
-  },
-});
+new NodejsAwsCartApi(app, 'nodejs-aws-cart-api', {});
